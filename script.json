@@ -1,0 +1,8 @@
+{
+    "BOT": "Hi there!\nI’m the personal bot of Prafful, a Product Developer from Mumbai.\n![Prafful](https://goo.gl/photos/gth91WPGwtkGFLZi6)\nWant to know more about bots or learn about Prafful? %[I'm here for the bot](postback:here_for_the_bot) %[Learn about Prafful](postback:learn_about_prafful) %[One random fact!](postback:random_fact)",
+    "HELLO": "Hey, I'm so glad you set EstherBot up! Do you want to tell Prafful that you're talking to her bot? %[Tell her](postback:twitter)",
+    "TELL HER": "Let's tweet @ Prafful so he knows you're setting a bot up. Here's a tweet that's ready to go: %[Tweet Prafful](http://bit.ly/295w2n0)",
+    "I LOVE YOU": "Awh, shucks! I love you too!",
+    "CONNECT ME": "",
+    "DISCONNECT": "Roger that, Bot is back."
+}
