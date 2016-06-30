@@ -38,7 +38,7 @@ Is that OK? %[Yes](postback:yes) %[No](postback:no)`))
         }
     },
 
-speak: {
+    speak: {
         receive: (bot, message) => {
 
             let upperText = message.text.trim().toUpperCase();
@@ -49,6 +49,8 @@ speak: {
                         return bot.setProp("silent", true);
                     case "DISCONNECT":
                         return bot.setProp("silent", false);
+                    case "HELLO":
+                        return bot.say('Hola!').then(()=>'speak');
                     default:
                         return Promise.resolve();
                 }
