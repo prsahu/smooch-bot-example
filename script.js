@@ -36,7 +36,7 @@ Is that OK? %[Yes](postback:yes) %[No](postback:no)`))
                         'teach me how to do anything else!'))
                 .then(() => 'finish');
         }
-    }
+    },
 
 speak: {
         receive: (bot, message) => {
