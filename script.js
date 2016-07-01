@@ -7,7 +7,7 @@ const scriptRules = require('./script.json');
 
 module.exports = new Script({
     processing: {
-        prompt: (bot) => bot.say('Beep boop...'),
+        //prompt: (bot) => bot.say('Beep boop...'),
         receive: () => 'processing'
     },
 
@@ -18,7 +18,7 @@ module.exports = new Script({
         }
     },
 
-    askName: {
+    /*askName: {
         prompt: (bot) => bot.say('What\'s your name?'),
         receive: (bot, message) => {
             const name = message.text;
@@ -36,7 +36,7 @@ Is that OK? %[Yes](postback:yes) %[No](postback:no)`))
                         'teach me how to do anything else!'))
                 .then(() => 'finish');
         }
-    },
+    },*/
 
     speak: {
         receive: (bot, message) => {
@@ -49,8 +49,8 @@ Is that OK? %[Yes](postback:yes) %[No](postback:no)`))
                         return bot.setProp("silent", true);
                     case "DISCONNECT":
                         return bot.setProp("silent", false);
-                    case "HELLO":
-                        return bot.say('Hola!').then(()=>'speak');
+                    //case "HELLO":
+                    //    return bot.say('Hola!').then(()=>'speak');
                     default:
                         return Promise.resolve();
                 }
